@@ -1,1 +1,76 @@
+Absenteeism at Work (Part I)
 
+🏫 Origine :
+
+Cette base de données a été créée dans le cadre d’une recherche académique menée à l’Université Nove de Julho (Brésil), au sein du programme de troisième cycle en Informatique et Gestion des Connaissances.
+L’objectif principal était d’analyser les facteurs influençant l’absentéisme des employés dans une entreprise.
+
+🎯 Objectif de la base :
+
+Étudier les causes de l’absence au travail (durée et fréquence) en fonction de plusieurs variables socio-démographiques, professionnelles et médicales.
+Elle permet de développer des modèles prédictifs ou analytiques pour comprendre :
+
+Pourquoi certains employés s’absentent plus souvent que d’autres,
+
+Quelles sont les variables les plus explicatives de l’absentéisme,
+
+Comment les entreprises peuvent améliorer la gestion du personnel et réduire les absences injustifiées.
+
+📊 Description générale :
+
+Nombre d’observations : 740
+
+Nombre de variables : 21
+
+Chaque ligne représente un employé (ou un épisode d’absence) et chaque colonne correspond à une caractéristique descriptive.
+
+📋 Principales variables :
+
+Voici les variables les plus importantes :
+
+Variable	Description
+ID	Identifiant unique de l’employé
+Reason for absence	Raison médicale ou autre de l’absence (codée de 1 à 28)
+Month of absence	Mois pendant lequel l’absence a eu lieu
+Day of the week	Jour de la semaine (2 à 6 = lundi à vendredi)
+Seasons	Saison correspondante (1 = hiver, 2 = printemps, etc.)
+Transportation expense	Coût mensuel du transport
+Distance from Residence to Work	Distance entre le domicile et le travail (en km)
+Service time	Nombre d’années de service dans l’entreprise
+Age	Âge de l’employé
+Work load average/day	Charge de travail moyenne par jour
+Hit target	Pourcentage de l’objectif atteint
+Disciplinary failure	0 = non, 1 = oui
+Education	Niveau d’éducation (1 = primaire, 2 = secondaire, etc.)
+Son / Pet / Weight / Height / BMI	Informations personnelles et de santé
+Absenteeism time in hours	Variable cible (durée de l’absence en heures)
+⚙️ Type de données :
+
+Quantitatives : âge, distance, charge de travail, heures d’absence, etc.
+
+Qualitatives : saison, raison de l’absence, niveau d’éducation, jour de la semaine, etc.
+
+🧠 Utilisation possible :
+
+Analyse statistique descriptive (profil type des absents, distribution des motifs d’absence)
+
+Analyse factorielle (ACP ou AFC) pour réduire le nombre de variables
+
+Modélisation prédictive (régression, arbre de décision, SVM…) pour estimer la probabilité ou la durée d’absence
+
+Clustering pour identifier des groupes d’employés similaires selon leurs comportements d’absence
+
+📈 Exemples de questions de recherche possibles :
+
+Quelles sont les raisons principales d’absence au travail ?
+
+L’âge ou la distance domicile-travail ont-ils un impact sur l’absentéisme ?
+
+Peut-on prédire la durée d’absence selon le profil de l’employé ?
+
+Y a-t-il une corrélation entre la charge de travail et les absences ?
+
+✅ Conclusion :
+
+Cette base de données offre un cadre riche pour étudier le comportement des employés vis-à-vis de l’absentéisme.
+Elle combine des données personnelles, professionnelles et médicales, permettant une analyse multidimensionnelle utile pour la gestion des ressources humaines et l’amélioration du bien-être au travail.
