@@ -1,1 +1,87 @@
+Compte rendu — E-Commerce Sales Prediction
+1. Contexte et objectif
 
+Ce projet a pour objectif de prédire le montant des ventes (Sales) d’un site e-commerce en utilisant différentes caractéristiques des produits et du marketing, telles que le prix, la catégorie de produit, le segment client, la remise et les dépenses marketing.
+Il s’agit d’un problème de régression supervisée, la variable cible étant continue.
+
+2. Description de la base de données
+
+Taille : 1 000 enregistrements.
+
+Variables (7) :
+
+Date — Date de vente
+
+Product_Category — Catégorie du produit (catégorielle)
+
+Price — Prix du produit (numérique)
+
+Discount — Remise appliquée (numérique)
+
+Customer_Segment — Segment client (catégorielle)
+
+Marketing_Spend — Dépenses marketing (numérique)
+
+Units_Sold — Quantité vendue (numérique)
+
+Pas de valeurs manquantes significatives après nettoyage, peu de doublons.
+
+3. Analyse exploratoire (EDA)
+
+Distribution des ventes : La variable Sales est asymétrique, avec certains produits ayant des ventes très élevées (outliers).
+
+Boxplots et scatterplots : Permettent de visualiser les relations entre variables numériques et ventes.
+
+Corrélations : Price et Units_Sold influencent fortement Sales.
+
+Catégories : Les ventes varient selon la catégorie de produit, identifiant des segments plus performants.
+
+4. Prétraitement des données
+
+Suppression des doublons.
+
+Imputation des valeurs manquantes par la médiane pour les variables numériques.
+
+Transformation des variables :
+
+Variables numériques : standardisation (StandardScaler).
+
+Variables catégorielles : encodage one-hot (OneHotEncoder).
+
+Définition des features (X) et de la cible (y = Sales).
+
+5. Modélisation
+
+Trois modèles ont été testés :
+
+Régression linéaire — RMSE ≈ 2130
+
+Random Forest Regressor — RMSE ≈ 727
+
+XGBoost Regressor — RMSE ≈ 607
+
+Conclusion : XGBoost est le modèle le plus performant pour cette base.
+
+6. Entraînement final et évaluation
+
+Le modèle XGBoost a été entraîné sur l’ensemble des données.
+
+Résultats :
+
+RMSE ≈ 111 → erreur moyenne très faible
+
+R² ≈ 0,9999 → excellent ajustement du modèle
+
+Cela montre que le modèle prédit avec précision les ventes à partir des caractéristiques disponibles.
+
+7. Conclusion générale
+
+Cette analyse montre que :
+
+La préparation et le prétraitement des données (nettoyage, encodage, standardisation) sont essentiels.
+
+XGBoost est le meilleur modèle pour ce dataset.
+
+Les variables Price, Units_Sold et la Product_Category sont les principales déterminantes des ventes.
+
+L’étude fournit une base solide pour prédire les ventes futures et optimiser les stratégies marketing.
