@@ -1,1 +1,14 @@
 
+Un compte rendu doit résumer ton projet de façon courte et claire. Voici un modèle que tu peux reprendre et adapter :
+
+## Contexte du projet
+Le projet porte sur la prédiction des ventes d’un site e‑commerce à partir de données historiques contenant des informations sur les produits, les prix, les remises, les dépenses marketing et les dates de commande. L’objectif est d’aider à anticiper le volume de ventes afin d’améliorer la planification commerciale.
+
+## Méthodologie
+Les données ont d’abord été nettoyées (traitement des valeurs manquantes, conversion des dates, encodage des variables catégorielles) puis analysées à l’aide de statistiques descriptives et de visualisations pour comprendre les tendances et les relations entre variables. Un modèle de machine learning supervisé, tel qu’une régression linéaire ou une forêt aléatoire pour la régression, a ensuite été entraîné pour prédire le montant des ventes à partir des caractéristiques disponibles.
+
+## Résultats obtenus
+Le modèle entraîné parvient à estimer les ventes avec une erreur moyenne raisonnable et met en évidence l’influence de certaines variables comme le prix, les remises et la période (saison, mois) sur le chiffre d’affaires. Ces résultats montrent que la prédiction des ventes peut soutenir les décisions de pricing, de stock et de campagnes marketing.
+
+## Limites et pistes d’amélioration
+Le modèle dépend fortement de la qualité et de la quantité des données historiques disponibles, ce qui limite sa capacité à gérer des événements exceptionnels (promotions spéciales, ruptures de stock, changements de marché). Des améliorations possibles incluent l’ajout de nouvelles variables (données concurrentielles, trafic du site), le test d’autres algorithmes plus avancés et une mise à jour régulière du modèle avec de nouvelles données.
